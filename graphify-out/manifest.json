@@ -1,0 +1,146 @@
+{
+  "infrastructure/scripts/verify_citations.py": {
+    "mtime": 1793467028.620484,
+    "seen": 1793467053.024433,
+    "ast_hash": "79a3bbb0547f9440352afc89d2a2d7a0",
+    "semantic_hash": ""
+  },
+  "infrastructure/tests/test_citation_integrity.py": {
+    "mtime": 1793467030.1641684,
+    "seen": 1793467053.024435,
+    "ast_hash": "1fef15c30f1f8b21701d0b79d153f6a7",
+    "semantic_hash": ""
+  },
+  "pyproject.toml": {
+    "mtime": 1793466581.6001172,
+    "seen": 1793467053.024436,
+    "ast_hash": "ae418149250335509aac9de4e37f9170",
+    "semantic_hash": ""
+  },
+  "00-foundation/learning-roadmap/PROJECT_01_LEARNING_ROADMAP.md": {
+    "mtime": 1793466989.2521288,
+    "seen": 1793467053.024436,
+    "ast_hash": "d56f44312cd5a6db98a08b0378775ec0",
+    "semantic_hash": ""
+  },
+  "00-foundation/scientific-methodology/EPISTEMIC_STANDARDS.md": {
+    "mtime": 1793466991.324286,
+    "seen": 1793467053.024437,
+    "ast_hash": "0526c40cf068fb55f1d77d0d576eedc6",
+    "semantic_hash": ""
+  },
+  "01-literature/research-gaps/GAP_ANALYSIS_MATRIX.md": {
+    "mtime": 1793466863.703953,
+    "seen": 1793467053.024437,
+    "ast_hash": "84695ee6254248d0a5bdf9dfc09d49c6",
+    "semantic_hash": ""
+  },
+  "02-research-discovery/candidate-topics/FIVE_RANKED_CANDIDATES.md": {
+    "mtime": 1793466866.2817543,
+    "seen": 1793467053.024438,
+    "ast_hash": "f552867193273c4d30dd3eeeed6c2e11",
+    "semantic_hash": ""
+  },
+  "02-research-discovery/hypothesis-register/HYPOTHESIS_REGISTER.md": {
+    "mtime": 1793466869.3618271,
+    "seen": 1793467053.024438,
+    "ast_hash": "700626af5544cd4edb91ad1872aa3954",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/proposal/PROJECT_PROPOSAL.md": {
+    "mtime": 1793466993.5656412,
+    "seen": 1793467053.024438,
+    "ast_hash": "e311b21ec1261e440244b94f3c479763",
+    "semantic_hash": ""
+  },
+  "04-scientific-software/documentation/TOOLCHAIN_EVALUATION_AND_INTEGRATION.md": {
+    "mtime": 1793466736.1285079,
+    "seen": 1793467053.024439,
+    "ast_hash": "6dfb14f47d31e949f4e48c907034884a",
+    "semantic_hash": ""
+  },
+  "06-independent-review/peer-review/ADVERSARIAL_REVIEW_PROTOCOL.md": {
+    "mtime": 1793466998.97309,
+    "seen": 1793467053.024439,
+    "ast_hash": "7a034d95a45c608472dfed24750848ea",
+    "semantic_hash": ""
+  },
+  "08-skills/evaluated-skills.md": {
+    "mtime": 1793466732.8008041,
+    "seen": 1793467053.02444,
+    "ast_hash": "953d6663cc31a5c6ddf37d3e0ae817db",
+    "semantic_hash": ""
+  },
+  "08-skills/installed-skills.md": {
+    "mtime": 1793466730.648991,
+    "seen": 1793467053.02444,
+    "ast_hash": "1d960bcb4a75afdf6481b166519e71a5",
+    "semantic_hash": ""
+  },
+  "08-skills/research-workflows.md": {
+    "mtime": 1793466734.3379092,
+    "seen": 1793467053.024441,
+    "ast_hash": "df19668f5ab05a88ca20729ae22d5167",
+    "semantic_hash": ""
+  },
+  "09-knowledge-base/research-decisions.md": {
+    "mtime": 1793467002.937107,
+    "seen": 1793467053.024441,
+    "ast_hash": "ca98e9b73251b4e29a5e15a325264756",
+    "semantic_hash": ""
+  },
+  "09-knowledge-base/scientific-glossary.md": {
+    "mtime": 1793467001.1368341,
+    "seen": 1793467053.024441,
+    "ast_hash": "d6de172c48802a5deea16a1f8b6b1d2b",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1793466573.4901316,
+    "seen": 1793467053.0244422,
+    "ast_hash": "1317d99e21544549ed12f2e662d63362",
+    "semantic_hash": ""
+  },
+  "RESEARCH_CHARTER.md": {
+    "mtime": 1793466575.798167,
+    "seen": 1793467053.0244422,
+    "ast_hash": "110825a655202bbc19718be682255004",
+    "semantic_hash": ""
+  },
+  "RESEARCH_STATUS.md": {
+    "mtime": 1793466577.8075464,
+    "seen": 1793467053.0244422,
+    "ast_hash": "9f00025e01b34bba72b1edbbc640a6a1",
+    "semantic_hash": ""
+  },
+  "infrastructure/environment/HARDWARE_AND_ENV_AUDIT.md": {
+    "mtime": 1793466728.2843394,
+    "seen": 1793467053.024443,
+    "ast_hash": "6bef1b4b05003d4bc0ec0d261f2601f9",
+    "semantic_hash": ""
+  },
+  "01-literature/literature-reviews/2026_COSMOLOGY_AND_GRAVITATION_FRONTIERS.md": {
+    "mtime": 1793466861.3992207,
+    "seen": 1793467053.024443,
+    "ast_hash": "e7f8f51ee00672cadc3feffcc30e37d0",
+    "semantic_hash": ""
+  },
+  "02-research-discovery/novelty-assessments/PRIMARY_AND_BACKUP_NOVELTY_AUDIT.md": {
+    "mtime": 1793466867.5887794,
+    "seen": 1793467053.0244439,
+    "ast_hash": "20d56f459931753126e4b091938e8ccf",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/BENCHMARK_SPECIFICATION.md": {
+    "mtime": 1793466996.6586382,
+    "seen": 1793467053.0244439,
+    "ast_hash": "b37572685ef27a136a6a28023e8f2696",
+    "semantic_hash": ""
+  },
+  "ROADMAP.md": {
+    "mtime": 1793466579.901184,
+    "seen": 1793467053.0244448,
+    "ast_hash": "01d85f4bb59c115c22412c2ee7184b65",
+    "semantic_hash": ""
+  }
+}

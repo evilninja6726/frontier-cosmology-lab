@@ -5,7 +5,7 @@
   "3": "2. Detailed Profiles & Strongest Counterarguments",
   "4": "RESEARCH STATUS — Project Frontier",
   "5": "2. Mathematical Architecture of the Investigation",
-  "6": "Module 3: Horndeski Gravity, Effective Field Theory of Dark Energy (EFTofDE), and the Bellini-Sawicki $\\alpha$-Basis",
+  "6": "run_milestone7_benchmark.py",
   "7": "RESEARCH WORKFLOWS & SKILL ORCHESTRATION — Project Frontier",
   "8": "RESEARCH DECISION LOG (ADRs) — Project Frontier",
   "9": "HARDWARE AND ENVIRONMENT AUDIT — Milestone 1",
@@ -18,5 +18,9 @@
   "16": "EVALUATED SKILLS AUDIT — Milestone 2",
   "17": "SCIENTIFIC GLOSSARY & CONVENTIONS — Project Frontier",
   "18": "SPECIFIC RESEARCH GAPS & CONTRIBUTION CLASSIFICATION — Milestone 4 & 5",
-  "19": "frontier-cosmology-lab"
+  "19": "frontier-cosmology-lab",
+  "20": "cosmology_baseline.py",
+  "21": "flrw_and_horndeski_symbolic.py",
+  "22": "MATHEMATICAL MODEL & RIGOROUS DERIVATIONS (`PR-01`) — Stage 9",
+  "23": "solve_subhorizon_growth"
 }

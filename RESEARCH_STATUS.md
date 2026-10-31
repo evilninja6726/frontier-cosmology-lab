@@ -1,7 +1,7 @@
 # RESEARCH STATUS — Project Frontier
 
 **Last Updated:** 2026-10-31  
-**Current Phase:** Phase I & II Complete (Milestones 1–6 Executed; Milestone 7 Benchmark Specified & Ready for Execution)  
+**Current Phase:** Milestone 7 Baseline Completed & Verified (`BM-01` PASSED; Ready for Milestone 8 Original Extensions)  
 **Active Project:** `PR-01` — *Identifiability, Prior-Volume Effects, and Physical Stability of Phantom-Divide Crossing in Horndeski / EFT Dark Energy under DESI DR2, CMB, and SNe Ia*  
 **Backup Project:** `PR-02` — *Environmental vs. Intrinsic Perturbations in Black Hole Ringdown: Quantitative Pseudospectrum Bounds and Time-Domain Observability with Chebyshev Spectral Methods*
 
@@ -12,13 +12,13 @@
 | Milestone | Description | Status | Primary Artifact |
 | :--- | :--- | :--- | :--- |
 | **M1** | Environment Audit | **COMPLETED** | `infrastructure/environment/HARDWARE_AND_ENV_AUDIT.md` |
-| **M2** | Skills Discovery & Security Audit | **COMPLETED** | `08-skills/installed-skills.md`, `08-skills/evaluated-skills.md` |
+| **M2** | Skills Discovery & Installation | **COMPLETED** | `08-skills/installed-skills.md`, `08-skills/evaluated-skills.md` |
 | **M3** | Scientific Repository Investigation | **COMPLETED** | `04-scientific-software/documentation/TOOLCHAIN_EVALUATION_AND_INTEGRATION.md` |
 | **M4** | Systematic Literature Research | **COMPLETED** | `01-literature/literature-reviews/2026_COSMOLOGY_AND_GRAVITATION_FRONTIERS.md` |
 | **M5** | Candidate Scoring & Project Selection | **COMPLETED** | `02-research-discovery/candidate-topics/FIVE_RANKED_CANDIDATES.md` |
 | **M6** | Targeted Physics Learning Roadmap | **COMPLETED** | `00-foundation/learning-roadmap/PROJECT_01_LEARNING_ROADMAP.md` |
-| **M7** | First Reproducible Benchmark | **SPECIFIED (NEXT)** | `03-projects/pr01-horndeski-crossing-identifiability/baseline/BENCHMARK_SPECIFICATION.md` |
-| **M8** | Original Research Extensions | **GATED ON M7** | `03-projects/pr01-horndeski-crossing-identifiability/proposal/PROJECT_PROPOSAL.md` |
+| **M7** | First Reproducible Benchmark (`BM-01`) | **COMPLETED (PASSED)** | `05-experiments/experiment-registry/BM_01_milestone7_report.json` |
+| **M8** | Original Research Extensions (`EXP-01`–`EXP-03`) | **READY (NEXT)** | `03-projects/pr01-horndeski-crossing-identifiability/theory/THEORY_AND_DERIVATIONS.md` |
 
 ---
 
@@ -49,13 +49,19 @@
 ---
 
 ## 4. Current Confidence & Epistemic State
-- **Environment & Toolchain Assessment:** Verified (100% tested on local Apple M5 hardware).
-- **Citation Database Integrity:** Verified (100% of BibTeX entries in `01-literature/citation-database/references.bib` validated via live arXiv API query).
-- **Primary Hypothesis Status:** **Preregistered (`H0`, `H1`, `H2`) — Untested** (awaiting Milestone 7 baseline reproduction).
+- **Environment & Toolchain Assessment:** Verified (`camb==2.0.5`, `cobaya==3.6.2`, `jax==0.7.1`, `sympy==1.14.0`, `astropy==7.2.3`, `getdist==1.7.7`, `pytest==9.2.0` installed and active in `.venv`).
+- **Citation Database Integrity:** Verified (25/25 BibTeX entries in `01-literature/citation-database/references.bib` validated via live arXiv API query).
+- **Symbolic Derivations (`L1 — Mathematically Valid`):** Verified via `SymPy` in `03-projects/pr01-horndeski-crossing-identifiability/derivations/flrw_and_horndeski_symbolic.py`. Caught and corrected a sign convention in the Padé $[1/1]$ antiderivative and proved that the naive proportional braiding ansatz $\alpha_B(a) = c_B \Omega_{\mathrm{DE}}(a)$ requires $c_B < 0$ at $w = -1$ to satisfy $D(a_c)c_s^2(a_c) > 0$.
+- **Milestone 7 Baseline (`L2 — Numerically Validated` & `L5 — Independently Reproduced`):** All 9 automated `pytest` tests (`T7.1`–`T7.5` + symbolic + citation checks) passed:
+  - `T7.1` ($E(z)$ vs. `CAMB` across $z \in [0, 1100]$): max relative error $2.58 \times 10^{-7}$ (gate: $< 10^{-5}$).
+  - `T7.2` ($D_M(z), D_H(z)$ vs. `CAMB` at DESI DR2 redshifts): max relative error $7.93 \times 10^{-10}$ and $4.03 \times 10^{-12}$ (gate: $< 10^{-5}$).
+  - `T7.3` ($r_d$ vs. Planck 2018 & `CAMB`): $r_d = 147.1030\text{ Mpc}$ ($8.83 \times 10^{-5}$ vs. Planck $147.09\text{ Mpc}$; $1.87 \times 10^{-6}$ vs. `CAMB`).
+  - `T7.4` ($D_+(z)$ vs. `CAMB` $\sigma_8(z)/\sigma_8(0)$): max relative error $2.41 \times 10^{-4}$ (gate: $< 5 \times 10^{-4}$).
+  - `T7.5` (DESI DR2 BAO + Planck 2018 compressed CMB fit): $\Lambda$CDM best-fit $H_0 = 68.48\text{ km s}^{-1}\text{ Mpc}^{-1}, \Omega_m = 0.3001, \chi^2 = 14.714$; CPL $w_0w_a$CDM best-fit $w_0 = -0.498, w_a = -1.484, \Omega_m = 0.3458, H_0 = 64.22\text{ km s}^{-1}\text{ Mpc}^{-1}, \chi^2 = 7.193$ ($\Delta\chi^2 = -7.521$, phantom crossing at $z_c = 0.511$).
 
 ---
 
-## 5. Immediate Next Actions
-1. **User Review & Approval:** Confirm selection of **PR-01** (Primary) and **PR-02** (Backup), and approve installation of the shortlisted scientific Python packages (`numpy`, `scipy`, `sympy`, `astropy`, `jax`, `matplotlib`, `camb`, `cobaya`) and vetted skills (`k-dense-ai/scientific-agent-skills` subset + `KalarisLabs/research-agent-skills@citation-verification`).
-2. **Execute Milestone 7 Baseline:** Implement and run the automated $\Lambda$CDM and $w_0w_a$CDM benchmark suite comparing custom `SciPy`/`JAX` FLRW background + linear growth integrators against `CAMB` and published DESI DR2 (`arXiv:2503.14738`) / Planck 2018 (`arXiv:1807.06209`) tables to $< 10^{-4}$ relative error.
-3. **Complete Module 1 of Learning Program:** Walk through the FLRW metric, comoving distances, and BAO sound horizon $r_d$ derivation alongside the Milestone 7 code.
+## 5. Immediate Next Actions (Milestone 8 — Original Research Extensions)
+1. **Execute Experiment `EXP-01` (Horndeski Stability Phase-Space & Prior-Volume Jacobian):** Map the exact region in $(w_0, w_a, c_K, c_B)$ that satisfies no-ghost ($D > 0$) and gradient/sub-luminal stability ($0 < c_s^2(z) \le 1$) across $z \in [0, 1100]$, and compute how the effective prior-volume weight shifts the $(w_0, w_a)$ posterior vs. the prior-independent frequentist profile likelihood $\Delta\chi^2_{\mathrm{prof}}$.
+2. **Execute Experiment `EXP-02` (Basis Sensitivity Across CPL, Padé $[1/1]$, and Shifted Chebyshev):** Quantify whether the $\Delta\chi^2 = -7.52$ phantom-crossing preference at $z_c \approx 0.51$ persists or weakens under rational Padé and Chebyshev expansions of $w(a)$ when combined with Type Ia Supernova data.
+3. **Execute Experiment `EXP-03` (Mandatory Braiding Growth Slip $\mu(a) > 1$ on $f\sigma_8(z)$):** Compute the minimum $f\sigma_8(z)$ enhancement induced by $\alpha_{B,\min}$ across the DESI DR2 $1\sigma/2\sigma$ phantom-crossing contour relative to `CAMB`'s standard `PPF` approximation ($\mu \equiv 1$).

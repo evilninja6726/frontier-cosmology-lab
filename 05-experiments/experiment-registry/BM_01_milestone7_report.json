@@ -1,0 +1,39 @@
+{
+  "benchmark_id": "BM-01",
+  "milestone": "Milestone 7 \u2014 Reproducible Baseline",
+  "timestamp_utc": "2026-10-31T17:47:15.327775+00:00",
+  "status": "PASSED",
+  "validation_metrics": {
+    "T7.1_max_rel_err_E_z_CPL_vs_CAMB": 2.580230752066516e-07,
+    "T7.2_max_rel_err_DM_z_vs_CAMB": 7.932969981859686e-10,
+    "T7.2_max_rel_err_DH_z_vs_CAMB": 4.034637487166465e-12,
+    "T7.3_r_d_jax_Mpc": 147.10298784625778,
+    "T7.3_r_d_camb_Mpc": 147.10271284598454,
+    "T7.3_rel_err_vs_Planck2018": 8.829863524217936e-05,
+    "T7.3_rel_err_vs_CAMB": 1.8694439274009209e-06,
+    "T7.4_max_rel_err_D_plus_z_vs_CAMB": 0.00024061909736783232
+  },
+  "desi_dr2_plus_planck_cmb_fits": {
+    "LambdaCDM": {
+      "H0": 68.47787790678592,
+      "ombh2": 0.022542855179205873,
+      "omch2": 0.1175283566121304,
+      "Omega_m": 0.30008427476266153,
+      "w0": -1.0,
+      "wa": 0.0,
+      "chi2": 14.714278382771807
+    },
+    "w0waCDM_CPL": {
+      "H0": 64.22275646239669,
+      "ombh2": 0.022396416308947155,
+      "omch2": 0.11956782057586629,
+      "Omega_m": 0.34575579366542536,
+      "w0": -0.49800719537913063,
+      "wa": -1.4838576189569042,
+      "chi2": 7.193272910236311
+    },
+    "delta_chi2_cpl_minus_lcdm": -7.521005472535497,
+    "phantom_crossing_redshift_z_c": 0.51126468459951
+  },
+  "figure_artifact": "03-projects/pr01-horndeski-crossing-identifiability/results/milestone7_baseline_validation.png"
+}

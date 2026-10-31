@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "RESEARCH_STATUS.md": {
-    "mtime": 1793466577.8075464,
-    "seen": 1793467053.0244422,
-    "ast_hash": "9f00025e01b34bba72b1edbbc640a6a1",
+    "mtime": 1793468873.1488934,
+    "seen": 1793468875.77107,
+    "ast_hash": "598bd9c8262c1ba5ea1509232a7af765",
     "semantic_hash": ""
   },
   "infrastructure/environment/HARDWARE_AND_ENV_AUDIT.md": {
@@ -141,6 +141,156 @@
     "mtime": 1793466579.901184,
     "seen": 1793467053.0244448,
     "ast_hash": "01d85f4bb59c115c22412c2ee7184b65",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/cosmology_baseline.py": {
+    "mtime": 1793468798.63236,
+    "seen": 1793468875.7710478,
+    "ast_hash": "d8110f27dcd807d6be42825231523b02",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/derivations/flrw_and_horndeski_symbolic.py": {
+    "mtime": 1793468239.5255466,
+    "seen": 1793468875.77105,
+    "ast_hash": "3572a2f44587f6cee19aebff8be9c272",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/reproduction/run_milestone7_benchmark.py": {
+    "mtime": 1793468836.5766213,
+    "seen": 1793468875.771051,
+    "ast_hash": "5cf27109ff375f114e10fd5ea5d48952",
+    "semantic_hash": ""
+  },
+  "05-experiments/experiment-registry/BM_01_milestone7_report.json": {
+    "mtime": 1793468835.3283763,
+    "seen": 1793468875.771051,
+    "ast_hash": "f6627c83d590594a0fe432014ceaa4ed",
+    "semantic_hash": ""
+  },
+  "infrastructure/tests/test_milestone7_baseline.py": {
+    "mtime": 1793468801.0996609,
+    "seen": 1793468875.7710552,
+    "ast_hash": "2f305af7be72cf9d42a154ca22735694",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_2024_gaussian_bao_ALL_GCcomb_cov.txt": {
+    "mtime": 1793468360.0697033,
+    "seen": 1793468875.7710578,
+    "ast_hash": "0f1d10e2ea6bb17f0f74ad7e9fdf617a",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_2024_gaussian_bao_ALL_GCcomb_mean.txt": {
+    "mtime": 1793468359.7049873,
+    "seen": 1793468875.7710578,
+    "ast_hash": "6d2acdb05eb85a2116ee7054680818c3",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_ALL_GCcomb_cov.txt": {
+    "mtime": 1793468360.3719978,
+    "seen": 1793468875.771059,
+    "ast_hash": "c58dbe4b2d0cbd2b261e64c85cd211a7",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_ALL_GCcomb_mean.txt": {
+    "mtime": 1793468360.6773918,
+    "seen": 1793468875.771059,
+    "ast_hash": "9c2d2c029e7cd58562cb5b9bf2abf5ff",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_BGS_BRIGHT-21.35_GCcomb_cov.txt": {
+    "mtime": 1793468360.9922175,
+    "seen": 1793468875.77106,
+    "ast_hash": "2141e7a29386d88cbc1c4cc2a05ea761",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_BGS_BRIGHT-21.35_GCcomb_mean.txt": {
+    "mtime": 1793468361.3311832,
+    "seen": 1793468875.77106,
+    "ast_hash": "b397f189532e83eab7ff351aff33e0a9",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_ELG_LOPnotqso_GCcomb_z1.1-1.6_cov.txt": {
+    "mtime": 1793468361.742502,
+    "seen": 1793468875.77106,
+    "ast_hash": "4be7b59cbb52625af23fd01dd77c3074",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_ELG_LOPnotqso_GCcomb_z1.1-1.6_mean.txt": {
+    "mtime": 1793468362.0757635,
+    "seen": 1793468875.771061,
+    "ast_hash": "a15eb28ec010882e94e85beea2f14dfd",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_LRG+ELG_LOPnotqso_GCcomb_cov.txt": {
+    "mtime": 1793468362.436734,
+    "seen": 1793468875.771061,
+    "ast_hash": "848e7461298391b4fd09cbc5c6a0b6e9",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_LRG+ELG_LOPnotqso_GCcomb_mean.txt": {
+    "mtime": 1793468362.758865,
+    "seen": 1793468875.771062,
+    "ast_hash": "3986a25f201960f26e05ed39668d24ba",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_LRG_GCcomb_z0.4-0.6_cov.txt": {
+    "mtime": 1793468363.0888293,
+    "seen": 1793468875.771062,
+    "ast_hash": "9f352d1da398a3bf6d9a4c69f3e7a3d1",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_LRG_GCcomb_z0.4-0.6_mean.txt": {
+    "mtime": 1793468363.4458342,
+    "seen": 1793468875.771062,
+    "ast_hash": "48ae3140df7cea5658baa1f19214cd2c",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_LRG_GCcomb_z0.6-0.8_cov.txt": {
+    "mtime": 1793468363.8555455,
+    "seen": 1793468875.771063,
+    "ast_hash": "624ac1879e0270b7512a035d6fa9a067",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_LRG_GCcomb_z0.6-0.8_mean.txt": {
+    "mtime": 1793468364.2437057,
+    "seen": 1793468875.771063,
+    "ast_hash": "b23bf66255a689abe071ed9a187c3afe",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_Lya_GCcomb_cov.txt": {
+    "mtime": 1793468364.557463,
+    "seen": 1793468875.771064,
+    "ast_hash": "daf36cf6f0b295b0b5a269b7e481ec7d",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_Lya_GCcomb_mean.txt": {
+    "mtime": 1793468364.8893104,
+    "seen": 1793468875.771064,
+    "ast_hash": "74aec88c303ba20ff5b3dcb509890d57",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_QSO_GCcomb_cov.txt": {
+    "mtime": 1793468365.2890341,
+    "seen": 1793468875.771064,
+    "ast_hash": "dc82a18bd6d24cb2b5596f4496e12f9c",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/desi_gaussian_bao_QSO_GCcomb_mean.txt": {
+    "mtime": 1793468365.6991372,
+    "seen": 1793468875.771065,
+    "ast_hash": "19bec000fbb7bac216f34848e95bc458",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/theory/THEORY_AND_DERIVATIONS.md": {
+    "mtime": 1793468223.6778371,
+    "seen": 1793468875.7710662,
+    "ast_hash": "cc6f43532d6da9225bdf1509ca5ac70f",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/results/milestone7_baseline_validation.png": {
+    "mtime": 1793468835.3275623,
+    "seen": 1793468875.771073,
+    "ast_hash": "18e7de439134db4bfcf8ddb9a66c07d2",
     "semantic_hash": ""
   }
 }

@@ -1,0 +1,20 @@
+# Python & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Large scientific outputs, MCMC chains, and temporary caches
+*.fits
+*.hdf5
+*.h5
+*.npz
+chains/
+05-experiments/artifacts/*.npz
+05-experiments/artifacts/*.h5
+
+# OS artifacts
+.DS_Store

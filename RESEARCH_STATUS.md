@@ -1,7 +1,7 @@
 # RESEARCH STATUS — Project Frontier
 
-**Last Updated:** 2026-10-31  
-**Current Phase:** Milestone 7 Baseline Completed & Verified (`BM-01` PASSED; Ready for Milestone 8 Original Extensions)  
+**Last Updated:** 2026-11-03  
+**Current Phase:** Milestone 8 Completed & Stage 14 Adversarial Peer Review Passed (`ARA 4.80/5.00`; Cloud Execution Pipeline Active)  
 **Active Project:** `PR-01` — *Identifiability, Prior-Volume Effects, and Physical Stability of Phantom-Divide Crossing in Horndeski / EFT Dark Energy under DESI DR2, CMB, and SNe Ia*  
 **Backup Project:** `PR-02` — *Environmental vs. Intrinsic Perturbations in Black Hole Ringdown: Quantitative Pseudospectrum Bounds and Time-Domain Observability with Chebyshev Spectral Methods*
 
@@ -18,7 +18,7 @@
 | **M5** | Candidate Scoring & Project Selection | **COMPLETED** | `02-research-discovery/candidate-topics/FIVE_RANKED_CANDIDATES.md` |
 | **M6** | Targeted Physics Learning Roadmap | **COMPLETED** | `00-foundation/learning-roadmap/PROJECT_01_LEARNING_ROADMAP.md` |
 | **M7** | First Reproducible Benchmark (`BM-01`) | **COMPLETED (PASSED)** | `05-experiments/experiment-registry/BM_01_milestone7_report.json` |
-| **M8** | Original Research Extensions (`EXP-01`–`EXP-03`) | **READY (NEXT)** | `03-projects/pr01-horndeski-crossing-identifiability/theory/THEORY_AND_DERIVATIONS.md` |
+| **M8** | Original Research Extensions (`EXP-01`–`EXP-03`) & Stage 14 Review | **COMPLETED (PASSED)** | `03-projects/pr01-horndeski-crossing-identifiability/results/MILESTONE8_RESEARCH_SYNTHESIS.md`, `06-independent-review/peer-review/PR01_ADVERSARIAL_REVIEW_REPORT.md` |
 
 ---
 
@@ -58,10 +58,16 @@
   - `T7.3` ($r_d$ vs. Planck 2018 & `CAMB`): $r_d = 147.1030\text{ Mpc}$ ($8.83 \times 10^{-5}$ vs. Planck $147.09\text{ Mpc}$; $1.87 \times 10^{-6}$ vs. `CAMB`).
   - `T7.4` ($D_+(z)$ vs. `CAMB` $\sigma_8(z)/\sigma_8(0)$): max relative error $2.41 \times 10^{-4}$ (gate: $< 5 \times 10^{-4}$).
   - `T7.5` (DESI DR2 BAO + Planck 2018 compressed CMB fit): $\Lambda$CDM best-fit $H_0 = 68.48\text{ km s}^{-1}\text{ Mpc}^{-1}, \Omega_m = 0.3001, \chi^2 = 14.714$; CPL $w_0w_a$CDM best-fit $w_0 = -0.498, w_a = -1.484, \Omega_m = 0.3458, H_0 = 64.22\text{ km s}^{-1}\text{ Mpc}^{-1}, \chi^2 = 7.193$ ($\Delta\chi^2 = -7.521$, phantom crossing at $z_c = 0.511$).
+- **Milestone 8 Original Extensions (`EXP-01`–`EXP-03`, `L2`/`L3` Validated):**
+  - `EXP-01`: Proved symbolically that kineticity $\alpha_K(a)$ cancels identically out of $D(a)c_s^2(a)$ and $\mu(a)-1 = \alpha_B^2/[2 D c_s^2]$ in $\alpha_T = \alpha_M = 0$ Horndeski gravity; mapped prior-volume compression $\mathcal{V}_{\mathrm{EFT}}: 9.36\% \to 5.86\% \to 4.32\%$ and required negative braiding $c_B \in [-2.90, -0.2395]$.
+  - `EXP-02`: Demonstrated that a single low-$z$ ($z \le 0.10$) Union3 SNe Ia calibration zero-point split ($\Delta M_{\mathrm{low-}z} = -0.041\text{ mag}$) reduces $\Delta\chi^2_{\mathrm{CPL-\Lambda CDM}}$ from $-13.459$ to $-7.232$ (**$46.3\%$ reduction**, confirming Hypothesis `H1.1`).
+  - `EXP-03`: Quantified mandatory braiding growth slip $\Delta(f\sigma_8)/(f\sigma_8)_{\mathrm{PPF}}$ at $+1.28\%\text{--}+1.61\%$ along the stability boundary $c_{B,\mathrm{crit}}$ (below $2.5\%$) and $+5.36\%\text{--}+6.72\%$ in the interior stable prior volume $c_B = -1.0$ (nuanced/split resolution of Hypothesis `H1.2`).
+- **Stage 14 Independent Adversarial Peer Review (`PASSED`, Composite ARA Score `4.80 / 5.00`):** Full 11-point falsification audit and methodological caveats documented in `06-independent-review/peer-review/PR01_ADVERSARIAL_REVIEW_REPORT.md`.
+- **Cloud Execution Infrastructure (`0%` Local Thermal Load):** Serverless Modal runner (`infrastructure/cloud/modal_runner.py`) and GitHub Actions workflow (`.github/workflows/cloud_research_pipeline.yml`) configured and documented in `infrastructure/cloud/CLOUD_COMPUTE_GUIDE.md`.
 
 ---
 
-## 5. Immediate Next Actions (Milestone 8 — Original Research Extensions)
-1. **Execute Experiment `EXP-01` (Horndeski Stability Phase-Space & Prior-Volume Jacobian):** Map the exact region in $(w_0, w_a, c_K, c_B)$ that satisfies no-ghost ($D > 0$) and gradient/sub-luminal stability ($0 < c_s^2(z) \le 1$) across $z \in [0, 1100]$, and compute how the effective prior-volume weight shifts the $(w_0, w_a)$ posterior vs. the prior-independent frequentist profile likelihood $\Delta\chi^2_{\mathrm{prof}}$.
-2. **Execute Experiment `EXP-02` (Basis Sensitivity Across CPL, Padé $[1/1]$, and Shifted Chebyshev):** Quantify whether the $\Delta\chi^2 = -7.52$ phantom-crossing preference at $z_c \approx 0.51$ persists or weakens under rational Padé and Chebyshev expansions of $w(a)$ when combined with Type Ia Supernova data.
-3. **Execute Experiment `EXP-03` (Mandatory Braiding Growth Slip $\mu(a) > 1$ on $f\sigma_8(z)$):** Compute the minimum $f\sigma_8(z)$ enhancement induced by $\alpha_{B,\min}$ across the DESI DR2 $1\sigma/2\sigma$ phantom-crossing contour relative to `CAMB`'s standard `PPF` approximation ($\mu \equiv 1$).
+## 5. Next Phase Options
+1. **Trigger Remote Cloud Execution:** Run `modal run infrastructure/cloud/modal_runner.py` or push to GitHub Actions to execute dense 2D grid scans and MCMC chains on cloud containers.
+2. **Stage 15 Manuscript Preparation (`07-publications/manuscripts/`):** Draft the LaTeX research paper for `PR-01` incorporating the `EXP-01`–`EXP-03` results and Stage 14 methodological caveats.
+3. **Launch Project `PR-02` (Black Hole Ringdown Pseudospectra):** Initiate the Chebyshev spectral pseudospectrum solver for environmental vs. intrinsic black hole ringdown perturbations.

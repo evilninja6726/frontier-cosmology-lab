@@ -84,9 +84,9 @@
     "semantic_hash": ""
   },
   "09-knowledge-base/research-decisions.md": {
-    "mtime": 1793467002.937107,
-    "seen": 1793467053.024441,
-    "ast_hash": "ca98e9b73251b4e29a5e15a325264756",
+    "mtime": 1793678556.8858452,
+    "seen": 1793678567.222702,
+    "ast_hash": "92bbccbfb7fa30b51e5d6c50896b6335",
     "semantic_hash": ""
   },
   "09-knowledge-base/scientific-glossary.md": {
@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "RESEARCH_STATUS.md": {
-    "mtime": 1793468873.1488934,
-    "seen": 1793468875.77107,
-    "ast_hash": "598bd9c8262c1ba5ea1509232a7af765",
+    "mtime": 1793678533.2338035,
+    "seen": 1793678567.2227042,
+    "ast_hash": "36e02deff2f5cede0076e6e007dc7c7e",
     "semantic_hash": ""
   },
   "infrastructure/environment/HARDWARE_AND_ENV_AUDIT.md": {
@@ -144,9 +144,9 @@
     "semantic_hash": ""
   },
   "03-projects/pr01-horndeski-crossing-identifiability/baseline/cosmology_baseline.py": {
-    "mtime": 1793468798.63236,
-    "seen": 1793468875.7710478,
-    "ast_hash": "d8110f27dcd807d6be42825231523b02",
+    "mtime": 1793678873.984102,
+    "seen": 1793678885.3402188,
+    "ast_hash": "2a15afdd924a9a7ef7648fe0130ea622",
     "semantic_hash": ""
   },
   "03-projects/pr01-horndeski-crossing-identifiability/derivations/flrw_and_horndeski_symbolic.py": {
@@ -282,15 +282,93 @@
     "semantic_hash": ""
   },
   "03-projects/pr01-horndeski-crossing-identifiability/theory/THEORY_AND_DERIVATIONS.md": {
-    "mtime": 1793468223.6778371,
-    "seen": 1793468875.7710662,
-    "ast_hash": "cc6f43532d6da9225bdf1509ca5ac70f",
+    "mtime": 1793678430.2346516,
+    "seen": 1793678567.222699,
+    "ast_hash": "41fbdd2bbf10266944ed3fc7e6ba119b",
     "semantic_hash": ""
   },
   "03-projects/pr01-horndeski-crossing-identifiability/results/milestone7_baseline_validation.png": {
     "mtime": 1793468835.3275623,
     "seen": 1793468875.771073,
     "ast_hash": "18e7de439134db4bfcf8ddb9a66c07d2",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/experiments/run_milestone8_experiments.py": {
+    "mtime": 1793678457.4184089,
+    "seen": 1793678567.2226791,
+    "ast_hash": "619b183836fcd7a66a8528d351e920fa",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/simulations/horndeski_eft_solver.py": {
+    "mtime": 1793679982.3266523,
+    "seen": 1793679990.981876,
+    "ast_hash": "970f1b9dcaa9ca9a82818e63ae67fbac",
+    "semantic_hash": ""
+  },
+  "05-experiments/experiment-registry/EXP_01_to_03_milestone8_report.json": {
+    "mtime": 1793678107.298701,
+    "seen": 1793678567.222682,
+    "ast_hash": "213bc45f6b31f6f25356f13a52d89b54",
+    "semantic_hash": ""
+  },
+  "infrastructure/cloud/modal_runner.py": {
+    "mtime": 1793679274.7267406,
+    "seen": 1793679990.981878,
+    "ast_hash": "9155426a0b7df19e1a3f006fc4b1bd91",
+    "semantic_hash": ""
+  },
+  "infrastructure/tests/test_milestone8_extensions.py": {
+    "mtime": 1793677268.1170993,
+    "seen": 1793678567.2226849,
+    "ast_hash": "d1fec15b4e91c58c541735a43ce10cfc",
+    "semantic_hash": ""
+  },
+  ".github/workflows/cloud_research_pipeline.yml": {
+    "mtime": 1793678049.5981698,
+    "seen": 1793678567.2226849,
+    "ast_hash": "d6e39d3952dd0afdc36d3fdab7ed09af",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/sdss_DR16_BAOplus_LRG_FSBAO_DMDHfs8_covtot.txt": {
+    "mtime": 1793676670.7968264,
+    "seen": 1793678567.2226958,
+    "ast_hash": "ed528060b76b621147f4e13c85c870d1",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/sdss_DR16_BAOplus_QSO_FSBAO_DMDHfs8_covtot.txt": {
+    "mtime": 1793676671.1678092,
+    "seen": 1793678567.222697,
+    "ast_hash": "5e753a7a35877f58e7008574e5ef5c46",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/union3_lcparam_full.txt": {
+    "mtime": 1793676669.7731247,
+    "seen": 1793678567.222697,
+    "ast_hash": "ecd27b6899d1d9aadba5b7bf25da6160",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/union3_mag_covmat.txt": {
+    "mtime": 1793676670.1748252,
+    "seen": 1793678567.222698,
+    "ast_hash": "6caaa359709287e5aadf5a5af12aa671",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/results/MILESTONE8_RESEARCH_SYNTHESIS.md": {
+    "mtime": 1793678492.727883,
+    "seen": 1793678567.222698,
+    "ast_hash": "abc99d5d67687d1fa1eb9f9ee8c91c0c",
+    "semantic_hash": ""
+  },
+  "06-independent-review/peer-review/PR01_ADVERSARIAL_REVIEW_REPORT.md": {
+    "mtime": 1793678394.6952147,
+    "seen": 1793678567.2227,
+    "ast_hash": "e369bc050e116ece945bea571699c6ad",
+    "semantic_hash": ""
+  },
+  "infrastructure/cloud/CLOUD_COMPUTE_GUIDE.md": {
+    "mtime": 1793678123.5797215,
+    "seen": 1793678567.2227042,
+    "ast_hash": "b6a23d0f855fd78e00a6eb4e7edfa120",
     "semantic_hash": ""
   }
 }

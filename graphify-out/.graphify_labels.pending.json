@@ -5,7 +5,7 @@
   "3": "2. Detailed Profiles & Strongest Counterarguments",
   "4": "RESEARCH STATUS — Project Frontier",
   "5": "2. Mathematical Architecture of the Investigation",
-  "6": "run_milestone7_benchmark.py",
+  "6": "run_milestone8_experiments.py",
   "7": "RESEARCH WORKFLOWS & SKILL ORCHESTRATION — Project Frontier",
   "8": "RESEARCH DECISION LOG (ADRs) — Project Frontier",
   "9": "HARDWARE AND ENVIRONMENT AUDIT — Milestone 1",
@@ -22,5 +22,9 @@
   "20": "cosmology_baseline.py",
   "21": "flrw_and_horndeski_symbolic.py",
   "22": "MATHEMATICAL MODEL & RIGOROUS DERIVATIONS (`PR-01`) — Stage 9",
-  "23": "solve_subhorizon_growth"
+  "23": "DESIDR2BAOLikelihood",
+  "24": "Milestone 8 Research Synthesis — Identifiability, Prior-Volume Effects, and Physical Stability of Phantom-Divide Crossing in Horndeski / EFT Dark Energy (`PR-01`)",
+  "25": "horndeski_eft_solver.py",
+  "26": "Cloud Compute Architecture for Project Frontier (Zero Local Thermal Load)",
+  "27": "INDEPENDENT ADVERSARIAL PEER REVIEW REPORT — STAGE 14 (`PR-01`)"
 }

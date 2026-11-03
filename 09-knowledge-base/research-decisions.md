@@ -31,3 +31,25 @@ This log permanently records major architectural, methodological, and scientific
   - **Primary (`PR-01`, Score 92.0/100):** *Identifiability, Prior-Volume Effects, and Physical Stability of Phantom-Divide Crossing in Horndeski / EFT Dark Energy under DESI DR2, CMB, and SNe Ia*.
   - **Backup (`PR-02`, Score 90.5/100):** *Environmental vs. Intrinsic Perturbations in Black Hole Ringdown: Quantitative Pseudospectrum Bounds and Time-Domain Observability*.
 - **Rationale:** Both projects address active 2025–2026 research debates (`DESI DR2` dynamical dark energy vs. `Jaramillo et al.` / 2026 WKB halo QNM claims), have 100% open observational data, admit exact symbolic derivations in `SymPy`, and run natively on Apple M5 hardware with clear falsification gates.
+
+---
+
+## `ADR-005`: Scale-Invariant Horndeski Stability Ratios & Exact Analytical $c_K$ Integration
+- **Date:** 2026-11-03
+- **Decision:** Evaluate Horndeski no-ghost ($D(z)/\Omega_{\mathrm{DE}}(z) > 0$) and gradient stability ($N_s(z)/\Omega_{\mathrm{DE}}(z) > 0$) using scale-invariant ratios normalized by $\Omega_{\mathrm{DE}}(z) > 0$, and compute the sub-luminality survival fraction over kineticity $c_K \in [c_{K,\min}, c_{K,\max}]$ analytically via $c_K \ge \max_z [N_s(c_B, z)/\Omega_{\mathrm{DE}}(z) - \frac{3}{2}c_B^2 \Omega_{\mathrm{DE}}(z)]$.
+- **Rationale:** Eliminates false numerical underflow at $z = 1100$ (where $\Omega_{\mathrm{DE}}(1100) \sim 10^{-16}$) and reduces 3D $(c_K, c_B, z)$ array memory and compute by $120\times$ while replacing discrete $c_K$ grid quadrature with the exact analytical survival integral.
+
+---
+
+## `ADR-006`: Dual-Tier Cloud Execution Architecture (`Modal` + `GitHub Actions`)
+- **Date:** 2026-11-03
+- **Decision:** Offload all multi-core `CAMB` / `JAX` / `SciPy` grid scans, non-linear optimizations, and `pytest` runs to a dual-tier cloud setup (`infrastructure/cloud/modal_runner.py` for serverless interactive execution on Modal containers and `.github/workflows/cloud_research_pipeline.yml` for automated GitHub Actions CI/CD).
+- **Rationale:** Prevents multi-threaded OpenMP/JAX workloads from heating up the local MacBook while maintaining full deterministic reproducibility and automated artifact syncing back to the local repository.
+
+---
+
+## `ADR-007`: Stage 14 Adversarial Peer Review Resolution & Split Verdict on Hypothesis `H1.2`
+- **Date:** 2026-11-03
+- **Decision:** Record the nuanced/split empirical outcome for Hypothesis `H1.2` (refuted at the fine-tuned gradient-stability boundary $c_B = c_{B,\mathrm{crit}}$ where $\Delta f\sigma_8 / f\sigma_8 = +1.28\%\text{--}+1.61\%$, confirmed across the interior/median of the surviving EFT prior volume $c_B = -1.0$ where $\Delta f\sigma_8 / f\sigma_8 = +5.36\%\text{--}+6.72\%$), alongside all 5 structural methodological caveats identified by the independent Adversarial Physics Reviewer (`PR01_ADVERSARIAL_REVIEW_REPORT.md`).
+- **Rationale:** Upholds the laboratory's core charter rule (*"Never sacrifice scientific integrity for an exciting discovery narrative"*) by preserving boundary counterexamples and methodological scope limits alongside confirmed findings (`H1.1` confirmed at $46.3\%$ reduction).
+

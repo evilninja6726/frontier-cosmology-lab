@@ -339,38 +339,36 @@ def solve_subhorizon_growth(
     h = params.H0 / 100.0
     omega_cb0 = (params.ombh2 + params.omch2) / (h**2)
 
-    def _e_of_a(a_val: float) -> float:
-        z_val = (1.0 / a_val) - 1.0
-        return float(
-            e_of_z_jax(
-                jnp.array(z_val),
-                params.H0,
-                params.ombh2,
-                params.omch2,
-                params.w0,
-                params.wa,
-                rad,
-                pade_b=params.pade_b,
-                de_model=params.de_model,
-            )
+    a_ini = 1e-3
+    x_ini = float(np.log(a_ini))
+    x_grid = np.linspace(x_ini - 0.01, 0.01, 1200)
+    a_grid = np.exp(x_grid)
+    z_grid = (1.0 / a_grid) - 1.0
+    e_grid = np.asarray(
+        e_of_z_jax(
+            jnp.asarray(z_grid, dtype=jnp.float64),
+            params.H0,
+            params.ombh2,
+            params.omch2,
+            params.w0,
+            params.wa,
+            rad,
+            pade_b=params.pade_b,
+            de_model=params.de_model,
         )
-
-    def _dlnH_dlna(a_val: float) -> float:
-        eps = 1e-5 * a_val
-        return (np.log(_e_of_a(a_val + eps)) - np.log(_e_of_a(a_val - eps))) / (2.0 * eps / a_val)
+    )
+    ln_e_grid = np.log(e_grid)
+    dlnH_grid = np.gradient(ln_e_grid, x_grid)
+    om_cb_grid = omega_cb0 * (a_grid**-3) / (e_grid**2)
 
     def _rhs(x: float, y: np.ndarray) -> list[float]:
         a_val = float(np.exp(x))
-        e_val = _e_of_a(a_val)
-        dlnH = _dlnH_dlna(a_val)
-        om_cb_a = omega_cb0 * (a_val**-3) / (e_val**2)
+        dlnH = float(np.interp(x, x_grid, dlnH_grid))
+        om_cb_a = float(np.interp(x, x_grid, om_cb_grid))
         mu_val = float(mu_func(a_val)) if mu_func is not None else 1.0
         delta, ddelta = y
         d2delta = -(2.0 + dlnH) * ddelta + 1.5 * om_cb_a * mu_val * delta
         return [float(ddelta), float(d2delta)]
-
-    a_ini = 1e-3
-    x_ini = float(np.log(a_ini))
     z_sorted_idx = np.argsort(z_eval)[::-1]
     z_sorted = z_eval[z_sorted_idx]
     x_eval = np.log(1.0 / (1.0 + z_sorted))

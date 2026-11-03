@@ -69,7 +69,7 @@ $$S^{(2)}_{\text{scalar}} = \int d^3x\,dt\,a^3 \frac{M_*^2}{2}\left[ \frac{2 D(a
 
 $$D(a) \equiv \alpha_K(a) + \frac{3}{2}\alpha_B^2(a) > 0$$
 
-$$c_s^2(a) = \frac{1}{D(a)}\left[ \left(1 - \frac{\alpha_B}{2}\right)\left(\alpha_B(1 + \alpha_M) + 2\alpha_M - \alpha_B\frac{d\ln H}{d\ln a}\right) + \frac{d\alpha_B}{d\ln a} - \frac{3\Omega_{\mathrm{DE}}(a)\left[1 + w(a)\right]}{1} \right] > 0$$
+$$c_s^2(a) = \frac{1}{D(a)}\left[ 3\Omega_{\mathrm{DE}}(a)\left[1 + w(a)\right] + \left(1 - \frac{\alpha_B}{2}\right)\left(\alpha_B\frac{d\ln H}{d\ln a} - \alpha_B(1 + \alpha_M) - 2\alpha_M\right) - \frac{d\alpha_B}{d\ln a} \right] > 0$$
 *(written here in the standard Bellini-Sawicki convention where $\frac{d\ln H}{d\ln a} = -\frac{3}{2}\left[\Omega_m(a) + \frac{4}{3}\Omega_r(a) + \Omega_{\mathrm{DE}}(a)(1 + w(a))\right]$ and $\alpha_T = 0$).*
 
 ### 10-Point Mathematical Audit
@@ -89,9 +89,7 @@ $$c_s^2(a) = \frac{1}{D(a)}\left[ \left(1 - \frac{\alpha_B}{2}\right)\left(\alph
 7. **Symmetries and Conservation Laws:** Unitary-gauge residual spatial diffeomorphism invariance $x^i \to x^i + \xi^i(t, \mathbf{x})$, which guarantees only one scalar and two tensor propagating degrees of freedom (no Ostrogradsky higher-derivative ghost).
 8. **Relevant Limiting Cases & The Phantom-Crossing Theorem:**
    - **Unbraided / Minimally Coupled Limit ($\alpha_B = 0, \alpha_M = 0$ — k-essence / Quintessence):**
-     Setting $\alpha_B = 0$ and $\alpha_M = 0$ in Equation 3 yields the exact identity:
-     $$D(a) c_s^2(a) = \alpha_K(a) c_s^2(a) = -3\Omega_{\mathrm{DE}}(a)\left[1 + w(a)\right] \quad \text{? Wait: in canonical convention } \alpha_K c_s^2 = 3\Omega_{\mathrm{DE}}(1 + w(a)).$$
-     Let us check the sign convention carefully (verified symbolically in [`flrw_and_horndeski_symbolic.py`](file:///Users/rajat/personal/research/frontier-cosmology-lab/03-projects/pr01-horndeski-crossing-identifiability/derivations/flrw_and_horndeski_symbolic.py)): in canonical quintessence $\mathcal{L} = X - V(\phi)$, $\dot{\phi}^2 = \rho_{\mathrm{DE}}(1 + w) > 0$ for $w > -1$, so $\alpha_K = 3\Omega_{\mathrm{DE}}(1 + w) > 0$ and $c_s^2 = 1$, which means the term in $D(a) c_s^2(a)$ is $+3\Omega_{\mathrm{DE}}(1 + w(a))$:
+     Setting $\alpha_B = 0$ and $\alpha_M = 0$ in Equation 3 (verified symbolically in [`flrw_and_horndeski_symbolic.py`](file:///Users/rajat/personal/research/frontier-cosmology-lab/03-projects/pr01-horndeski-crossing-identifiability/derivations/flrw_and_horndeski_symbolic.py)) yields:
      $$D(a) c_s^2(a) = 3\Omega_{\mathrm{DE}}(a)\left[1 + w(a)\right] + \left(1 - \frac{\alpha_B}{2}\right)\left[\alpha_B\frac{d\ln H}{d\ln a} - \alpha_B(1 + \alpha_M) - 2\alpha_M\right] - \frac{d\alpha_B}{d\ln a}$$
      Therefore, when $\alpha_B = 0$ and $\alpha_M = 0$:
      $$\alpha_K(a) c_s^2(a) = 3\Omega_{\mathrm{DE}}(a)\left[1 + w(a)\right]$$

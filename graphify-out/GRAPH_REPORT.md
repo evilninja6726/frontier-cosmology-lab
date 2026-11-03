@@ -1,7 +1,7 @@
 # Graph Report - frontier-cosmology-lab  (2026-11-03)
 
 ## Corpus Check
-- 38 files · ~56,685 words
+- 38 files · ~56,724 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 8 file(s) not represented in the graph (top: .dat 2, .ipynb 2, (none) 1)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f6f30f04`
+- Built from commit: `36cb5241`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

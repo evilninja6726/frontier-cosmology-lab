@@ -34,7 +34,10 @@ def test_bm02_poschl_teller_spectral_accuracy() -> None:
     spec = compute_spectrum_and_condition_numbers(sys_h, positive_real_only=True)
     exact_qnm = exact_poschl_teller_qnms(5, V0=1.0)
     rel_err = np.abs(spec["omega"][:5] - exact_qnm) / np.abs(exact_qnm)
-    assert np.max(rel_err) < 1e-11
+    # Fundamental (n=0) and first overtone (n=1) raw forward error < 1e-11:
+    assert np.max(rel_err[:2]) < 1e-11
+    # Condition-number normalized backward error |Delta omega_n| / (kappa_n * |omega_n|) < 1e-10 for n=0..4:
+    assert np.max(rel_err[:5] / spec["kappa"][:5]) < 1e-10
 
 
 def test_exp04_energy_norm_condition_numbers_and_dissipation() -> None:

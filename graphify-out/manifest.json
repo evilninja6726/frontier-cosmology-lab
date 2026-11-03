@@ -372,9 +372,9 @@
     "semantic_hash": ""
   },
   "03-projects/pr02-ringdown-pseudospectra/experiments/run_pr02_experiments.py": {
-    "mtime": 1793681204.842831,
-    "seen": 1793681265.524742,
-    "ast_hash": "9f858fabd294371536b45fbbe192a1b6",
+    "mtime": 1793682008.1218789,
+    "seen": 1793682065.774644,
+    "ast_hash": "b0c7789ddafdb8235f6d0d1f15d82d72",
     "semantic_hash": ""
   },
   "03-projects/pr02-ringdown-pseudospectra/simulations/chebyshev_pseudospectrum_solver.py": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "infrastructure/tests/test_pr02_ringdown.py": {
-    "mtime": 1793681229.6164877,
-    "seen": 1793681265.524746,
-    "ast_hash": "32b11eea359cce3c26b03bdbccd14fa7",
+    "mtime": 1793682021.7602365,
+    "seen": 1793682065.7746491,
+    "ast_hash": "d2427da7b4a9a4e52c52735864f2efb0",
     "semantic_hash": ""
   },
   "infrastructure/cloud/cloud_research_pipeline.yml": {

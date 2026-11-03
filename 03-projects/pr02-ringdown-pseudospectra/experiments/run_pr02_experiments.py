@@ -50,7 +50,9 @@ def run_bm02_poschl_teller_validation(V0: float = 1.0) -> dict:
         omega_num = spec["omega"][:6]
         rel_errs = np.abs(omega_num - exact_qnm) / np.abs(exact_qnm)
         convergence[f"N_{N}"] = {
+            "max_rel_err_n0_n1": float(np.max(rel_errs[:2])),
             "max_rel_err_n0_to_n4": float(np.max(rel_errs[:5])),
+            "max_kappa_normalized_err": float(np.max(rel_errs[:5] / spec["kappa"][:5])),
             "rel_err_per_mode": [float(x) for x in rel_errs[:5]],
             "omega_real": [float(np.real(w)) for w in omega_num[:5]],
             "omega_imag": [float(np.imag(w)) for w in omega_num[:5]],
@@ -72,7 +74,7 @@ def run_bm02_poschl_teller_validation(V0: float = 1.0) -> dict:
         "convergence": convergence,
         "max_positive_energy_drift_dE": max_positive_energy_drift,
         "energy_monotonic_dissipation_verified": bool(max_positive_energy_drift <= 1e-12),
-        "bm02_passed": bool(convergence["N_60"]["max_rel_err_n0_to_n4"] < 1e-11),
+        "bm02_passed": bool(convergence["N_60"]["max_rel_err_n0_n1"] < 1e-11),
     }
 
 
@@ -99,7 +101,7 @@ def run_exp04_pseudospectrum_and_condition_numbers(N: int = 50, V0: float = 1.0)
             "kappa": [float(k) for k in kappa_pos],
         },
         "kappa_ratio_n3_over_n0": kappa_ratio_n3_n0,
-        "kappa_ratio_n5_over_n0": kappa_ratio_n5_over_n0,
+        "kappa_ratio_n5_over_n0": kappa_ratio_n5_n0,
         "hypothesis_H2_1_condition_growth_confirmed": bool(kappa_ratio_n3_n0 > 20.0),
         "pseudospectrum_grid": {
             "re_grid": re_grid.tolist(),

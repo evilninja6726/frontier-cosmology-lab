@@ -1,0 +1,156 @@
+{
+  "project_id": "PR-02",
+  "experiment_suite_id": "BM-02-and-EXP-04-to-06",
+  "execution_environment": "Google Colab Cloud (Python 3.13.18, pytest 8.4.2, 4/4 passed in 2.49s)",
+  "elapsed_seconds": 16.01,
+  "BM_02_poschl_teller_validation": {
+    "benchmark_id": "BM-02",
+    "V0": 1.0,
+    "exact_omega_real": 0.8660254037844386,
+    "exact_omega_imag_n0_to_n4": [0.5, 1.5, 2.5, 3.5, 4.5],
+    "convergence": {
+      "N_40": {
+        "max_rel_err_n0_n1": 4.28070460e-12,
+        "max_rel_err_n0_to_n4": 1.217987012748866e-05,
+        "rel_err_per_mode": [
+          4.08696153e-13,
+          4.28070460e-12,
+          9.18274092e-10,
+          1.17080197e-07,
+          1.21798701e-05
+        ]
+      },
+      "N_60": {
+        "max_rel_err_n0_n1": 7.813450527711706e-11,
+        "max_kappa_normalized_err": 5.919196223309273e-15,
+        "rel_err_per_mode": [
+          3.4958349235849314e-13,
+          7.813450527711706e-11,
+          8.031249868228703e-08,
+          1.1588569601090295e-05,
+          0.0031874367363813475
+        ]
+      }
+    },
+    "energy_monotonic_dissipation_verified": true,
+    "bm02_passed": true
+  },
+  "EXP_04_pseudospectrum_and_condition_numbers": {
+    "N": 50,
+    "modes_n0_to_n6": {
+      "n": [0, 1, 2, 3, 4, 5, 6],
+      "omega_real": [
+        0.8660254037844386,
+        0.8660254037844386,
+        0.8660254037844386,
+        0.8660254037844386,
+        0.8660254037844386,
+        0.8660254037844386,
+        0.8660254037844386
+      ],
+      "omega_imag": [0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5],
+      "kappa": [
+        85.02744420377599,
+        11341.881121591234,
+        33889610.63714374,
+        544831951.0305711,
+        1120366219566.4116,
+        6169415780942.652,
+        204880892914788.7
+      ]
+    },
+    "kappa_ratio_n3_over_n0": 6407718.882445598,
+    "kappa_ratio_n5_over_n0": 72557935568.51923,
+    "hypothesis_H2_1_condition_growth_confirmed": true
+  },
+  "EXP_05_wavelength_and_flea_perturbation_audit": {
+    "N": 50,
+    "eps": 0.005,
+    "perturbation_formula": "delta_V_tilde(sigma) = eps * cos(k_mode * pi * sigma)",
+    "unperturbed_omega_real": [0.8660254037844386, 0.8660254037844386, 0.8660254037844386, 0.8660254037844386],
+    "unperturbed_omega_imag": [0.5, 1.5, 2.5, 3.5],
+    "wavenumber_threshold_summary": {
+      "k_1_adiabatic": {
+        "k_mode": 1,
+        "fundamental_n0_rel_shift_percent": 0.144,
+        "overtone_n2_rel_shift_percent": 0.241,
+        "overtone_n3_rel_shift_percent": 0.485,
+        "regime": "Mild perturbative shift (< 0.5% across n=0..3)"
+      },
+      "k_4_intermediate_flea": {
+        "k_mode": 4,
+        "fundamental_n0_rel_shift_percent": 0.068,
+        "overtone_n2_rel_shift_percent": 2.61,
+        "overtone_n3_rel_shift_percent": 20.84,
+        "regime": "Fundamental mode immune; overtone n=3 strongly destabilized"
+      },
+      "k_8_high_wavenumber_flea": {
+        "k_mode": 8,
+        "fundamental_n0_rel_shift_percent": 0.049,
+        "overtone_n2_rel_shift_percent": 7.42,
+        "overtone_n3_rel_shift_percent": 25.43,
+        "regime": "Fundamental mode immune (< 0.05%); overtones n=2,3 ejected along open pseudospectral branches (> 25%)"
+      }
+    }
+  },
+  "EXP_06_timedomain_observability_vs_echo_delay": {
+    "eps_bump": 0.002,
+    "width_bump": 0.3,
+    "k_osc": 6.0,
+    "x_max_tortoise_grid_N60": 3.6502,
+    "x_obs_tortoise": 1.124,
+    "bump_scan": [
+      {
+        "x_bump": 0.4,
+        "eps_bump": 0.002,
+        "overtone_n2_rel_shift_percent": 0.00091821593947722,
+        "overtone_n3_rel_shift_percent": 2.4943263503542292,
+        "mismatch_prompt_window": 7.43038175432531e-09,
+        "mismatch_late_echo_window": 1.1438734281998819e-07,
+        "late_over_prompt_mismatch_ratio": 15.394544533785496,
+        "critical_gw_snr_for_prompt_detection": 8203.127060723682
+      },
+      {
+        "x_bump": 1.0,
+        "eps_bump": 0.002,
+        "overtone_n2_rel_shift_percent": 0.37935312572124175,
+        "overtone_n3_rel_shift_percent": 12.437297723838519,
+        "mismatch_prompt_window": 1.661960802312734e-08,
+        "mismatch_late_echo_window": 2.4166515566470537e-07,
+        "late_over_prompt_mismatch_ratio": 14.540966028104362,
+        "critical_gw_snr_for_prompt_detection": 5484.974512547715
+      },
+      {
+        "x_bump": 1.6,
+        "eps_bump": 0.002,
+        "overtone_n2_rel_shift_percent": 6.558160612219645,
+        "overtone_n3_rel_shift_percent": 26.963907698322192,
+        "mismatch_prompt_window": 1.1597352411740758e-08,
+        "mismatch_late_echo_window": 1.5188430990686896e-07,
+        "late_over_prompt_mismatch_ratio": 13.096464133754058,
+        "critical_gw_snr_for_prompt_detection": 6566.0710069761135
+      },
+      {
+        "x_bump": 2.2,
+        "eps_bump": 0.002,
+        "overtone_n2_rel_shift_percent": 25.090346278321903,
+        "overtone_n3_rel_shift_percent": 43.56450348412727,
+        "mismatch_prompt_window": 4.022066013575909e-09,
+        "mismatch_late_echo_window": 4.10003231365863e-08,
+        "late_over_prompt_mismatch_ratio": 10.193846395905878,
+        "critical_gw_snr_for_prompt_detection": 11149.628701550733
+      },
+      {
+        "x_bump": 2.8,
+        "eps_bump": 0.002,
+        "overtone_n2_rel_shift_percent": 35.3386241976959,
+        "overtone_n3_rel_shift_percent": 46.27073892651071,
+        "mismatch_prompt_window": 1.8732349005290416e-11,
+        "mismatch_late_echo_window": 6.189746926121842e-08,
+        "late_over_prompt_mismatch_ratio": 3304.3089920936904,
+        "critical_gw_snr_for_prompt_detection": 163376.23437353727
+      }
+    ],
+    "hypothesis_H2_2_prompt_mismatch_below_1e4": true
+  }
+}

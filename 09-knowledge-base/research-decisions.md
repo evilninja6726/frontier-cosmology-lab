@@ -53,3 +53,11 @@ This log permanently records major architectural, methodological, and scientific
 - **Decision:** Record the nuanced/split empirical outcome for Hypothesis `H1.2` (refuted at the fine-tuned gradient-stability boundary $c_B = c_{B,\mathrm{crit}}$ where $\Delta f\sigma_8 / f\sigma_8 = +1.28\%\text{--}+1.61\%$, confirmed across the interior/median of the surviving EFT prior volume $c_B = -1.0$ where $\Delta f\sigma_8 / f\sigma_8 = +5.36\%\text{--}+6.72\%$), alongside all 5 structural methodological caveats identified by the independent Adversarial Physics Reviewer (`PR01_ADVERSARIAL_REVIEW_REPORT.md`).
 - **Rationale:** Upholds the laboratory's core charter rule (*"Never sacrifice scientific integrity for an exciting discovery narrative"*) by preserving boundary counterexamples and methodological scope limits alongside confirmed findings (`H1.1` confirmed at $46.3\%$ reduction).
 
+---
+
+## `ADR-008`: Energy-Norm Cholesky Similarity Transform & Condition-Normalized Backward Error Gate (`PR-02`)
+- **Date:** 2026-11-03
+- **Decision:** Compute the hyperboloidal QNM pseudospectrum and Bauer–Fike condition numbers $\kappa_n$ via the Cholesky-factored physical energy norm $\mathbf{G}_E = \mathbf{W}^T\mathbf{W}$ ($\tilde{\mathbf{L}} = \mathbf{W}\mathbf{L}\mathbf{W}^{-1}$) and evaluate spectral convergence of high overtones ($n \ge 2$) using the condition-normalized backward error $|\Delta\omega_n| / (\kappa_n |\omega_n|) < 10^{-10}$ alongside raw forward error $< 10^{-11}$ on $n = 0, 1$.
+- **Rationale:** Because non-normal condition numbers grow from $\kappa_0 = 85.03$ to $\kappa_4 = 1.12 \times 10^{12}$ and $\kappa_6 = 2.05 \times 10^{14}$, 64-bit IEEE-754 floating-point roundoff ($\epsilon_{\mathrm{mach}} \approx 2.2 \times 10^{-16}$) produces an unavoidable numerical pseudospectrum forward drift $|\Delta\omega_n|/|\omega_n| \simeq \kappa_n \epsilon_{\mathrm{mach}}$ while the condition-normalized backward error remains at $5.92 \times 10^{-15} \approx 26\,\epsilon_{\mathrm{mach}}$.
+
+

@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "02-research-discovery/hypothesis-register/HYPOTHESIS_REGISTER.md": {
-    "mtime": 1793466869.3618271,
-    "seen": 1793467053.024438,
-    "ast_hash": "700626af5544cd4edb91ad1872aa3954",
+    "mtime": 1793680936.672207,
+    "seen": 1793681265.524749,
+    "ast_hash": "fa9ae9e8eca04163a01b12d470f00859",
     "semantic_hash": ""
   },
   "03-projects/pr01-horndeski-crossing-identifiability/proposal/PROJECT_PROPOSAL.md": {
@@ -323,12 +323,6 @@
     "ast_hash": "d1fec15b4e91c58c541735a43ce10cfc",
     "semantic_hash": ""
   },
-  ".github/workflows/cloud_research_pipeline.yml": {
-    "mtime": 1793678049.5981698,
-    "seen": 1793678567.2226849,
-    "ast_hash": "d6e39d3952dd0afdc36d3fdab7ed09af",
-    "semantic_hash": ""
-  },
   "03-projects/pr01-horndeski-crossing-identifiability/baseline/data/sdss_DR16_BAOplus_LRG_FSBAO_DMDHfs8_covtot.txt": {
     "mtime": 1793676670.7968264,
     "seen": 1793678567.2226958,
@@ -369,6 +363,60 @@
     "mtime": 1793678123.5797215,
     "seen": 1793678567.2227042,
     "ast_hash": "b6a23d0f855fd78e00a6eb4e7edfa120",
+    "semantic_hash": ""
+  },
+  "03-projects/pr02-ringdown-pseudospectra/derivations/hyperboloidal_qnm_symbolic.py": {
+    "mtime": 1793681057.461529,
+    "seen": 1793681265.5247412,
+    "ast_hash": "43442ceb6551375adff4e1f0922f9b69",
+    "semantic_hash": ""
+  },
+  "03-projects/pr02-ringdown-pseudospectra/experiments/run_pr02_experiments.py": {
+    "mtime": 1793681204.842831,
+    "seen": 1793681265.524742,
+    "ast_hash": "9f858fabd294371536b45fbbe192a1b6",
+    "semantic_hash": ""
+  },
+  "03-projects/pr02-ringdown-pseudospectra/simulations/chebyshev_pseudospectrum_solver.py": {
+    "mtime": 1793681121.878624,
+    "seen": 1793681265.524742,
+    "ast_hash": "1526c87d7d485ad66a4c6b0a1b6eff99",
+    "semantic_hash": ""
+  },
+  "infrastructure/tests/test_pr02_ringdown.py": {
+    "mtime": 1793681229.6164877,
+    "seen": 1793681265.524746,
+    "ast_hash": "32b11eea359cce3c26b03bdbccd14fa7",
+    "semantic_hash": ""
+  },
+  "infrastructure/cloud/cloud_research_pipeline.yml": {
+    "mtime": 1793680089.9812343,
+    "seen": 1793681265.524766,
+    "ast_hash": "75dda81c8b91edc0c293c8ec41002c42",
+    "semantic_hash": ""
+  },
+  "03-projects/pr02-ringdown-pseudospectra/theory/THEORY_AND_DERIVATIONS.md": {
+    "mtime": 1793681007.1931636,
+    "seen": 1793681265.524768,
+    "ast_hash": "65fce1e806c2352cce901d65bf74ecd4",
+    "semantic_hash": ""
+  },
+  "03-projects/pr01-horndeski-crossing-identifiability/results/milestone8_horndeski_identifiability.png": {
+    "mtime": 1793680663.4461682,
+    "seen": 1793681265.52477,
+    "ast_hash": "ab5baa69ca67c4e64757e8edc15b08fc",
+    "semantic_hash": ""
+  },
+  "07-publications/figures/milestone7_baseline_validation.png": {
+    "mtime": 1793680663.4499137,
+    "seen": 1793681265.52477,
+    "ast_hash": "18e7de439134db4bfcf8ddb9a66c07d2",
+    "semantic_hash": ""
+  },
+  "07-publications/figures/milestone8_horndeski_identifiability.png": {
+    "mtime": 1793680663.4480083,
+    "seen": 1793681265.52477,
+    "ast_hash": "ab5baa69ca67c4e64757e8edc15b08fc",
     "semantic_hash": ""
   }
 }
